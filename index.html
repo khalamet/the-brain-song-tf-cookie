@@ -1,288 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Notice - Continue to Site</title>
 
-  <title>Brain Fog Relief Video</title>
+    <!-- Tracking Scripts -->
+    <script defer src="https://cdn.ventrocdn.com/code/6885-38aa5cac-d8b3-4354-a564-86c0703db6e4"></script>
 
-  <!-- Tracking Scripts -->
-  <script src="https://cdn.ventrocdn.com/code/6885-38aa5cac-d8b3-4354-a564-86c0703db6e4"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);
+            t.async=1;
+            t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "txtewat8e2");
+    </script>
 
-  <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);
-          t.async=1;
-          t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];
-          y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "txtewat8e2");
-  </script>
+    <style>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-    html, body{
-      width:100%;
-      height:100%;
-    }
+        body{
+            font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+            min-height:100vh;
+            background-color:#0a0a1a;
+            overflow:hidden;
+        }
 
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      background:#000;
-      overflow:hidden;
-      position:relative;
-    }
+        .bg-desktop{
+            position:fixed;
+            inset:0;
+            background-image:url('https://zenpluslab.com/wp-content/uploads/2026/05/the-brain-song-print-pc.jpg');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            z-index:0;
+            filter:blur(1px);
+            transform:scale(1.02);
+        }
 
-    .background{
-      position:fixed;
-      inset:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      filter:blur(2px) brightness(0.45);
-      transform:scale(1.05);
-    }
+        @media(max-width:768px){
 
-    .overlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.45);
-    }
+            .bg-desktop{
+                background-image:url('https://zenpluslab.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-05-at-105514-photoaidcom-darken.jpg');
+                background-position:center top;
+            }
 
-    .center-wrapper{
-      position:relative;
-      z-index:2;
-      width:100%;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:20px;
-    }
+        }
 
-    .cookie-popup{
-      width:100%;
-      max-width:430px;
-      background:#fff;
-      border-radius:18px;
-      padding:26px 24px;
-      box-shadow:0 25px 80px rgba(0,0,0,0.45);
-      position:relative;
-      animation:popup .35s ease;
-    }
+        .overlay{
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,0.55);
+            z-index:1;
+        }
 
-    @keyframes popup{
-      from{
-        transform:translateY(20px);
-        opacity:0;
-      }
-      to{
-        transform:translateY(0);
-        opacity:1;
-      }
-    }
+        .cookie-banner{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+            border-top:3px solid #4fc3f7;
+            padding:22px 30px;
+            z-index:9999;
+            box-shadow:0 -8px 40px rgba(79,195,247,0.3);
+            animation:slideUp .6s ease-out;
+        }
 
-    .close-btn{
-      position:absolute;
-      top:14px;
-      right:14px;
-      width:32px;
-      height:32px;
-      border-radius:50%;
-      background:#f3f3f3;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-decoration:none;
-      font-size:18px;
-      color:#444;
-      transition:0.2s;
-      font-weight:bold;
-    }
+        @keyframes slideUp{
 
-    .close-btn:hover{
-      background:#e8e8e8;
-    }
+            from{
+                transform:translateY(100%);
+                opacity:0;
+            }
 
-    .cookie-title{
-      font-size:28px;
-      line-height:1.2;
-      font-weight:800;
-      color:#111;
-      margin-bottom:16px;
-      padding-right:35px;
-    }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
 
-    .cookie-text{
-      font-size:17px;
-      line-height:1.6;
-      color:#444;
-      margin-bottom:20px;
-    }
+        }
 
-    .highlight{
-      color:#c1121f;
-      font-weight:700;
-    }
+        .cookie-inner{
+            max-width:1100px;
+            margin:0 auto;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:20px;
+            flex-wrap:wrap;
+        }
 
-    .buttons{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
+        .cookie-left{
+            display:flex;
+            align-items:flex-start;
+            gap:15px;
+            flex:1;
+            min-width:260px;
+        }
 
-    .btn{
-      width:100%;
-      border-radius:14px;
-      padding:18px;
-      font-size:18px;
-      font-weight:800;
-      cursor:pointer;
-      transition:0.2s;
-      text-decoration:none;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-    }
+        .cookie-icon{
+            font-size:32px;
+            flex-shrink:0;
+            margin-top:2px;
+        }
 
-    .accept{
-      background:#0f9d58;
-      color:#fff;
-      box-shadow:0 8px 20px rgba(15,157,88,0.35);
-    }
+        .cookie-text h3{
+            color:#4fc3f7;
+            font-size:16px;
+            font-weight:700;
+            margin-bottom:6px;
+            letter-spacing:.5px;
+            text-transform:uppercase;
+        }
 
-    .accept:hover{
-      transform:translateY(-1px);
-    }
+        .cookie-text p{
+            color:#cdd9e5;
+            font-size:13px;
+            line-height:1.6;
+        }
 
-    .decline{
-      background:#f3f3f3;
-      color:#222;
-    }
+        .cookie-buttons{
+            display:flex;
+            align-items:center;
+            gap:12px;
+            flex-shrink:0;
+        }
 
-    .decline:hover{
-      background:#ebebeb;
-    }
+        /* BOTÕES VIRARAM LINKS */
+        .btn-link{
+            text-decoration:none;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            transition:all .3s ease;
+        }
 
-    .mini{
-      margin-top:18px;
-      font-size:12px;
-      line-height:1.5;
-      color:#888;
-      text-align:center;
-    }
+        .btn-accept{
+            background:linear-gradient(135deg,#4fc3f7,#0288d1);
+            color:#fff;
+            border:none;
+            padding:13px 32px;
+            border-radius:50px;
+            font-size:15px;
+            font-weight:700;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            box-shadow:0 4px 20px rgba(79,195,247,0.5);
+            white-space:nowrap;
+        }
 
-    .pulse{
-      animation:pulse 1.7s infinite;
-    }
+        .btn-accept:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 28px rgba(79,195,247,0.7);
+            background:linear-gradient(135deg,#81d4fa,#039be5);
+        }
 
-    @keyframes pulse{
-      0%{
-        transform:scale(1);
-      }
-      50%{
-        transform:scale(1.03);
-      }
-      100%{
-        transform:scale(1);
-      }
-    }
+        .btn-close{
+            background:transparent;
+            border:1px solid rgba(205,217,229,0.3);
+            color:#8899aa;
+            width:36px;
+            height:36px;
+            border-radius:50%;
+            font-size:18px;
+        }
 
-    @media(max-width:480px){
+        .btn-close:hover{
+            background:rgba(205,217,229,0.1);
+            color:#cdd9e5;
+            border-color:rgba(205,217,229,0.5);
+        }
 
-      .cookie-popup{
-        padding:24px 20px;
-      }
+        @media(max-width:640px){
 
-      .cookie-title{
-        font-size:24px;
-      }
+            .cookie-banner{
+                padding:18px 18px 24px;
+            }
 
-      .cookie-text{
-        font-size:16px;
-      }
+            .cookie-inner{
+                flex-direction:column;
+                align-items:flex-start;
+                gap:16px;
+            }
 
-      .btn{
-        font-size:17px;
-        padding:17px;
-      }
-    }
-  </style>
+            .cookie-buttons{
+                width:100%;
+                justify-content:space-between;
+            }
+
+            .btn-accept{
+                flex:1;
+                text-align:center;
+                padding:13px 20px;
+                font-size:14px;
+            }
+
+            .cookie-text h3{
+                font-size:14px;
+            }
+
+            .cookie-text p{
+                font-size:12px;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
 
-  <!-- Background -->
-  <a href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl">
-    <img 
-      src="https://zenpluslab.com/wp-content/uploads/2026/04/Design-sem-nome-1.webp"
-      class="background"
-      alt="Brain Fog Relief Video"
-    >
-  </a>
+    <div class="bg-desktop"></div>
 
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <!-- Popup -->
-  <div class="center-wrapper">
+    <div class="cookie-banner" id="cookieBanner">
 
-    <div class="cookie-popup">
+        <div class="cookie-inner">
 
-      <!-- CLOSE -->
-      <a 
-        href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl"
-        class="close-btn"
-      >
-        ×
-      </a>
+            <div class="cookie-left">
 
-      <h1 class="cookie-title">
-        This Video Uses Cookies
-      </h1>
+                <div class="cookie-icon">🍪</div>
 
-      <p class="cookie-text">
-        To improve your experience, this page uses cookies and personalized data to load a 
-        <span class="highlight">brain fog treatment video</span> 
-        currently being watched by thousands of adults over 50.
-      </p>
+                <div class="cookie-text">
 
-      <p class="cookie-text">
-        The presentation may become unavailable due to high traffic and temporary hosting limitations.
-      </p>
+                    <h3>We Use Cookies to Enhance Your Experience</h3>
 
-      <div class="buttons">
+                    <p>
+                        This website uses cookies to personalize content, improve performance, and analyze traffic.
+                        By clicking <strong>"Accept All"</strong>, you agree to our Cookie Policy and Privacy Policy.
+                    </p>
 
-        <!-- ACCEPT -->
-        <a 
-          href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl"
-          class="btn accept pulse"
-        >
-          ACCEPT & WATCH VIDEO
-        </a>
+                </div>
 
-        <!-- DECLINE -->
-        <a 
-          href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl"
-          class="btn decline"
-        >
-          DECLINE & CONTINUE
-        </a>
+            </div>
 
-      </div>
+            <div class="cookie-buttons">
 
-      <div class="mini">
-        By continuing, you acknowledge our use of cookies and session tracking technologies.
-      </div>
+                <!-- BOTÃO PRINCIPAL -->
+                <a 
+                    href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl"
+                    class="btn-link btn-accept"
+                    id="btnAccept"
+                >
+                    ✓ Accept All & Continue
+                </a>
+
+                <!-- BOTÃO X -->
+                <a
+                    href="https://hop.clickbank.net/?affiliate=strkllr&vendor=brainsongx&pid=vsl"
+                    class="btn-link btn-close"
+                    id="btnClose"
+                    title="Close"
+                >
+                    ✕
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </div>
+    <script>
+
+        // TRACKING MAIS CONFIÁVEL POSSÍVEL
+        function registerTracking(eventName){
+
+            try{
+                if(typeof clarity === "function"){
+                    clarity("event", eventName);
+                }
+            }catch(e){}
+
+            try{
+                if(typeof gtag === "function"){
+                    gtag('event', eventName);
+                }
+            }catch(e){}
+
+            try{
+                if(typeof fbq === "function"){
+                    fbq('trackCustom', eventName);
+                }
+            }catch(e){}
+        }
+
+        // Botão principal
+        document.getElementById("btnAccept").addEventListener("click", function(){
+
+            registerTracking("accept_continue_click");
+
+        });
+
+        // Botão fechar
+        document.getElementById("btnClose").addEventListener("click", function(){
+
+            registerTracking("close_popup_click");
+
+        });
+
+    </script>
 
 </body>
 </html>
